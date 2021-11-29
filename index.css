@@ -610,13 +610,15 @@
     padding-bottom: 7px;
 }
 
-
 @media (max-width: 1440px) {
     .banner{
         width: 111.2%;
     }
     .navigation{
         width: 111.2%;
+    }
+    .mobile-display{
+        display: none;
     }
 }
 @media (max-width: 1024px) {
@@ -626,20 +628,21 @@
     .navigation{
         width: 157.1%;
     }
+    .mobile-display{
+        display: none;
+    }
 }
+@media (min-width: 800px) {
+    .mobile-display{
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
-    .banner{
-        width: 210.5%;
+    .web-display{
+        display: none;
     }
-    .navigation{
-        width: 210.5%;
-    }
-}
-@media (max-width: 425px) {
-    .banner{
-        width: 387.7%;
-    }
-    .navigation{
-        width: 387.7%;
+    .mobile-display{
+        display: contents;
     }
 }
